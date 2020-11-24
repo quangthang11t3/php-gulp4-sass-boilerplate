@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/* Fade up on scroll */
+.fadeup {
+  opacity: 0;
+  transform: translate(0, 80px);
+  transition: opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1) 0s, transform 2s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+  &.in {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+
+
+/* Fade up on load */
+@-webkit-keyframes fadeup2 {
+  0% {
+    opacity: 0;
+    transform: translate(0, 80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes fadeup2 {
+  0% {
+    opacity: 0;
+    transform: translate(0, 80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.fadeup2 {
+  opacity: 1;
+  transform: translate(0, 0);
+  animation: fadeup2 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
