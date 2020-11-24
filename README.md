@@ -2,6 +2,10 @@
 
 
 ## To Run the Project
+- Install PHP (Set PHP environment variable)
+- Install Gulp, Nodejs, etc
+
+
 Install all dependencies using 
 
 ```
