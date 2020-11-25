@@ -1,3 +1,4 @@
+<?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/inc/variables.php'; ?>
 <!DOCTYPE html>
 <html lang="ja">
 
