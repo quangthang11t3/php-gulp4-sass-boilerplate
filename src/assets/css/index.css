@@ -2120,5 +2120,12 @@ body {
 /* -------------------
   TOP PAGE
 --------------------*/
+/* -------------------
+  OBJECT FIT FOR IE
+--------------------*/
+img.cover,
+video.cover {
+  height: 100%;
+  object-fit: cover; }
 
 /*# sourceMappingURL=../maps/index.css.map */

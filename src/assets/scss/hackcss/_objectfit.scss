@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/* -------------------
+  OBJECT FIT FOR IE
+--------------------*/
+// How to use: add class "for img tag or video tag"
+
+img.cover,
+video.cover {
+	height: 100%;
+	object-fit: cover;
+}
