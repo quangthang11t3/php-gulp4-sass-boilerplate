@@ -422,7 +422,7 @@ textarea {
   NO - RESET
 --------------------*/
 .no-reset * {
-  line-height: normal !important; }
+  line-height: normal; }
 
 .no-reset html {
   box-sizing: content-box; }
