@@ -2081,16 +2081,16 @@ body {
       width: 100%; } }
 
 /* Fade up on scroll */
-.fadeup {
+.fadeinup {
   opacity: 0;
   transform: translate(0, 80px);
   transition: opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1) 0s, transform 2s cubic-bezier(0.165, 0.84, 0.44, 1) 0s; }
-  .fadeup.in {
+  .fadeinup.in {
     opacity: 1;
     transform: translate(0, 0); }
 
 /* Fade up on load */
-@-webkit-keyframes fadeup2 {
+@-webkit-keyframes fadeinup2 {
   0% {
     opacity: 0;
     transform: translate(0, 80px); }
@@ -2098,7 +2098,7 @@ body {
     opacity: 1;
     transform: translate(0, 0); } }
 
-@keyframes fadeup2 {
+@keyframes fadeinup2 {
   0% {
     opacity: 0;
     transform: translate(0, 80px); }
@@ -2106,10 +2106,10 @@ body {
     opacity: 1;
     transform: translate(0, 0); } }
 
-.fadeup2 {
+.fadeinup2 {
   opacity: 1;
   transform: translate(0, 0);
-  animation: fadeup2 1s cubic-bezier(0.165, 0.84, 0.44, 1); }
+  animation: fadeinup2 1s cubic-bezier(0.165, 0.84, 0.44, 1); }
 
 /* -------------------
   HEADER
@@ -2123,9 +2123,12 @@ body {
 /* -------------------
   OBJECT FIT FOR IE
 --------------------*/
-img.cover,
-video.cover {
+.coverBox .cover {
   height: 100%;
-  object-fit: cover; }
+  object-fit: cover;
+  font-family: 'object-fit: cover;'; }
+
+.coverBox {
+  overflow: hidden; }
 
 /*# sourceMappingURL=../maps/index.css.map */

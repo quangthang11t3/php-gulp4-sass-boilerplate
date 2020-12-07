@@ -2,10 +2,24 @@
 /* -------------------
   OBJECT FIT FOR IE
 --------------------*/
-// How to use: add class "for img tag or video tag"
+// How to use: add class ".cover" for img tag, and class wrapper is ".coverBox"
 
-img.cover,
-video.cover {
+.coverBox .cover {
 	height: 100%;
 	object-fit: cover;
+  font-family: 'object-fit: cover;';
+}
+
+.coverBox {
+	overflow: hidden;
+	// height: 266px;
+	// @include mq(){
+	// 	height: 216px;
+	// }
+	// &.type2 {
+	// 	height: 200px;
+	// 	@include mq(){
+	// 		height: 144px;
+	// 	}
+	// }
 }
