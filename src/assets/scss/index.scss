@@ -13,11 +13,11 @@
 // ===========================
 // libs
 // ===========================
-
-// @import "libs/slick";
 // @import "libs/remodal";
 // @import "libs/remodal-default-theme";
 // @import "libs/custom-remodal";
+// @import "libs/slick";
+// @import "libs/custom-slick";
 
 
 
@@ -25,7 +25,7 @@
 // animation
 // ===========================
 
-@import "animations/fadeinup";
+@import "animations/fadeup";
 // @import "animations/pulse";
 // @import "animations/delay";
 
@@ -34,7 +34,7 @@
 // ===========================
 // components
 // ===========================
-
+@import "components/parts";
 @import "components/header";
 @import "components/footer";
 
@@ -45,6 +45,7 @@
 // ===========================
 
 @import "pages/top";
+@import "pages/contact";
 // @import "pages/otherpage";
 
 

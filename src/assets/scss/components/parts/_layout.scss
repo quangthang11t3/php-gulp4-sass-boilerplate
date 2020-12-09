@@ -1,0 +1,39 @@
+@charset "UTF-8";
+// ===========================
+// Layouts (column, row, ..),
+// Format layout
+// ===========================
+
+// Format layout
+.align-center {
+  text-align: center;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+
+// Layouts (column, row, ..)
+
+.col2 {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -10px;
+	@include mq() {
+		display: block;
+		margin: 0;
+	}
+	&-item {
+		width: 50%;
+		margin-bottom: 20px;
+		padding: 0 10px;
+		@include mq() {
+			width: 100%;
+		}
+	}
+}

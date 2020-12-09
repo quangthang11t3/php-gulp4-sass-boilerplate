@@ -1,0 +1,211 @@
+@charset "UTF-8";
+// ===========================
+// FORM, INPUT, 
+// CHECKBOX, SELECT, ...
+// ===========================
+
+// Form, input, checkbox
+.form-one {
+  position: relative;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  height: 38px;
+  padding: 10px 40px 10px 16px;
+  color: #7B7B6C;
+  background-color: #FAFCD7;
+  border: 1px solid #C7C7C7;
+  border-radius: 2px;
+  font-size: fs(12);
+  transition: all .3s;
+  font-family: $font-base;
+  font-weight: bold;
+  &:focus,
+  &.active {
+    border-color: #000;
+    background-color: #fff;
+    color: #000;
+  }
+  &.textarea {
+    height: 140px;
+  }
+}
+
+.checkbox {
+  position: absolute; // take it out of document flow
+  opacity: 0; // hide it
+
+  &+label {
+    position: relative;
+    cursor: pointer;
+    padding: 0 0 0 38px;
+  }
+
+  // Box.
+  &+label:before {
+    top: -5px;
+    left: 0;
+    position: absolute;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 30px;
+    height: 30px;
+    background: #FAFCD7;
+    border: 1px solid #C7C7C7;
+    border-radius: 3px;
+    content: '';
+    @include mq() {
+    	top: -8px;
+  	}
+  }
+  &:checked + label:before {
+    background-color: #7B7B6C;
+    border-color: #7B7B6C;
+  }
+
+  // Disabled state label.
+  &:disabled+label {
+    color: #b8b8b8;
+    cursor: auto;
+  }
+
+  // Disabled box.
+  &:disabled+label:before {
+    box-shadow: none;
+    background: #ddd;
+  }
+
+  // Checkmark. Could be replaced with an image
+  &:checked+label:after {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 9px;
+    background: #FAFCD7;
+    width: 2px;
+    height: 2px;
+    box-shadow:
+      2px 0 0 #FAFCD7,
+      4px 0 0 #FAFCD7,
+      4px -2px 0 #FAFCD7,
+      4px -4px 0 #FAFCD7,
+      4px -6px 0 #FAFCD7,
+      4px -8px 0 #FAFCD7;
+    transform: rotate(45deg);
+    @include mq() {
+    	top: 6px;
+  	}
+  }
+}
+
+.search {
+  position: absolute;
+  top: calc(50% - 7px);
+  right: 16px;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: none;
+  background: url(../images/common/icon-search.svg) 100% 100% no-repeat;
+  content: "";
+}
+
+.form-search {
+  .input {
+    margin-bottom: 4px;
+    padding: 10px 40px 10px 16px;
+    cursor: pointer;
+    font-family: $font-base;
+  }
+
+  select {
+    font-weight: bold;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+          appearance: none;
+    background: #FAFCD7 url(../images/common/icon-arrow-down-gray.png) right 15px center / 8px 7px no-repeat;
+    font-family: $font-base;
+    &:focus {
+      background: #fff url(../images/common/icon-arrow-up-gray.png) right 15px center / 8px 7px no-repeat;
+      @include mq() {
+        background-position: right 8px center;
+      }
+    }
+
+    &.active {
+      border-color: #000;
+      color: #000;
+      background: #fff url(../images/common/icon-arrow-down-gray.png) right 15px center / 8px 7px no-repeat;
+      &:focus {
+        background: #fff url(../images/common/icon-arrow-up-gray.png) right 15px center / 8px 7px no-repeat;
+        @include mq() {
+          background-position: right 8px center;
+        }
+      }
+    }
+
+    &:-moz-focusring {
+      color: transparent;
+      text-shadow: 0 0 0 #000;
+    }
+
+    &::-ms-expand {
+        display: none;
+    }
+  }
+
+  .btn-gray {
+    width: 49%;
+  }
+}
+
+.selectMulti {
+  width: auto;
+  min-width: 100px;
+  padding: 12px 46px 12px 16px;
+  height: 48px;
+  font-weight: bold;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+        appearance: none;
+  font-family: $font-base;
+  background-image: url(../images/common/icon-arrow-up-gray.png), url(../images/common/icon-arrow-down-gray.png);
+  background-position: right 15px top 10px, right 15px top 28px;
+  background-repeat: no-repeat;
+  background-size: 8px 7px;
+
+  @include mq() {
+    width: 100%;
+  }
+
+  &.active {
+    border-color: #000;
+    color: #000;
+    background-color: #fff;
+    background-image: url(../images/common/icon-arrow-up-gray.png), url(../images/common/icon-arrow-down-gray.png);
+  }
+
+
+  &:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+  }
+
+  &::-ms-expand {
+      display: none;
+  }
+}
+
+.form-action {
+  display: flex;
+  justify-content: space-between;
+}

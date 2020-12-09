@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* Fade up on scroll */
-.fadeinup {
+.fadeup {
   opacity: 0;
   transform: translate(0, 80px);
   transition: opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1) 0s, transform 2s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
@@ -14,7 +14,7 @@
 
 
 /* Fade up on load */
-@-webkit-keyframes fadeinup2 {
+@-webkit-keyframes fadeup2 {
   0% {
     opacity: 0;
     transform: translate(0, 80px);
@@ -25,7 +25,7 @@
   }
 }
 
-@keyframes fadeinup2 {
+@keyframes fadeup2 {
   0% {
     opacity: 0;
     transform: translate(0, 80px);
@@ -36,8 +36,8 @@
   }
 }
 
-.fadeinup2 {
+.fadeup2 {
   opacity: 1;
   transform: translate(0, 0);
-  animation: fadeinup2 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation: fadeup2 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
