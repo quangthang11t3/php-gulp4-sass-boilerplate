@@ -7,3 +7,142 @@
 	@include mq(pc) {
 	}
 }
+
+// menu
+.menu {
+  &-list {
+    display: flex;
+  }
+
+  &-item {
+    position: relative;
+    margin-right: 30px;
+
+    @include mq() {
+      margin-right: 15px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--msg {
+      position: absolute;
+      bottom: -48px;
+      right: 0;
+      width: 260px;
+      height: 34px;
+      line-height: 34px;
+      background-color: #369ED5;
+      color: #fff;
+      font-size: fs(12);
+      font-weight: bold;
+      text-align: center;
+      z-index: 1;
+
+      @include mq() {
+        display: none;
+        width: 220px;
+        height: 30px;
+        line-height: 30px;
+        bottom: -38px;
+        font-size: fs(10);
+      }
+      &.hide {
+        display: none;
+      }
+      p {
+        position: relative;
+        height: 100%;
+        z-index: 2;
+
+        &:after {
+          position: absolute;
+          bottom: 100%;
+          right: 30px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 4px 8px 4px;
+          border-color: transparent transparent #369ED5 transparent;
+          content: "";
+
+          @include mq() {
+            right: 18px;
+          }
+        }
+      }
+    }
+
+    a {
+      display: block;
+      font-weight: bold;
+      font-size: fs(14);
+      line-height: fs(28);
+      padding-left: 22px;
+      background: url(../images/common/icon-list.svg) left center no-repeat;
+      transition: all .3s;
+
+      @include mq() {
+        padding-left: 0;
+        padding-top: 20px;
+        font-size: fs(10);
+        line-height: fs(12);
+        background-position: top 3px center;
+      }
+
+      &:hover {
+        opacity: .7;
+      }
+
+      &.pen {
+        background: url(../images/common/icon-pen.svg) left center no-repeat;
+
+        @include mq() {
+          background-position: top 2px center;
+        }
+      }
+
+      &.fork {
+        background: url(../images/common/icon-fork.svg) left center no-repeat;
+
+        @include mq() {
+          background-position: top 2px center;
+        }
+      }
+
+      &.lock {
+        position: relative;
+        margin-left: 30px;
+        color: #369ED5;
+        background: url(../images/common/icon-lock.svg) left center no-repeat;
+
+        @include mq() {
+          padding-left: 0;
+          margin-left: 0;
+          background-position: top center;
+        }
+
+        // a {
+        // 	@include mq() {
+        // 		padding-top: 20px;
+        // 	}
+        // }
+        &:before {
+          position: absolute;
+          top: 0;
+          left: -30px;
+          display: inline-block;
+          width: 1px;
+          height: 30px;
+          background-color: #C7C7C7;
+          content: "";
+
+          @include mq() {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

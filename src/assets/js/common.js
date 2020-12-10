@@ -4,8 +4,7 @@ $(function() {
   GLOBAL VARIABLE
   --------------------- */
   // Selector
-  var $selector01 = $('.js-selector01'),
-      $selector01 = $('.js-selector02');
+  // var $pageTop = $('.js-pageTop');
 
   // Init Value
   var breakpointSP = 767,
@@ -16,11 +15,6 @@ $(function() {
   /* --------------------
   FUNCTION COMMON
   --------------------- */
-  // Task01
-  var task01 = function() {
-    console.log("Hello!");
-  }
-
   // Setting anchor link
   var anchorLink = function() {
     // Scroll to section
@@ -33,19 +27,47 @@ $(function() {
     });
   }
 
-
-  /* --------------------
-  RUN INIT
-  --------------------- */
-  var init = function() {
-    // fix objectfit on IE
-    anchorLink();
-    objectFitImages();
-
-    task01();
+  // Animation scroll to top
+  var clickPageTop = function() {
+    var $pageTop = $('.js-pageTop');
+    $pageTop.click(function(e) {
+      $('html,body').animate({ scrollTop: 0 }, 300);
+    });
   }
 
-  // Run all script when DOM has loaded.
+  // Trigger Pagetop
+  var triggerPageTop = function() {
+    var $pageTop = $('.js-pageTop');
+    if ($(this).scrollTop() > 200) {
+      $pageTop.addClass('active');
+    } else {
+      $pageTop.removeClass('active');
+    }
+  }  
+
+
+  // Trigger Accordion
+  var triggerAccordion = function() {
+    var $accorLabel = $('.js-accorLabel'),
+        $accorCnt = $('.js-accorCnt');
+    $accorLabel.click(function () {
+      $(this).toggleClass('active').siblings($accorCnt).slideToggle();
+    });   
+  }  
+
+
+
+  /* --------------------
+  INIT (WINDOW ON LOAD)
+  --------------------- */
+  // Run all script when DOM has loaded
+  var init = function() {
+    anchorLink();
+    objectFitImages();
+    clickPageTop();
+    triggerAccordion();
+  }
+
   init();
 
 
@@ -62,8 +84,6 @@ $(function() {
   --------------------- */
   $(window).scroll(function() {
     var scroll = $(this).scrollTop();
-
-    // Animation fadeinup
     $('.fadeup').each(function() {
       var elemPos = $(this).offset().top;
       var windowHeight = $(window).height();
@@ -71,8 +91,8 @@ $(function() {
         $(this).addClass('in');
       }
     });
-    
-  });
 
+    triggerPageTop();
+  });
 
 });

@@ -19,7 +19,7 @@
   <meta name="twitter:image" content="">
   <!-- <link rel="shortcut icon" href="assets/images/favicon.png">
   <link rel="apple-touch-icon" href="assets/images/favicon.png"> -->
-  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="<?php echo $PATH;?>/assets/css/index.css">
 </head>
 
 <body>
@@ -27,3 +27,4 @@
     <header class="header">
       Header
     </header><!-- ./header -->
+

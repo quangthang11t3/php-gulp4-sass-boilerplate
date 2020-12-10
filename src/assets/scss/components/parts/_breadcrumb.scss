@@ -7,7 +7,7 @@
     white-space: nowrap;
     overflow-x: auto;
   }
-  &Wrap {
+  &-wrapper {
     padding-top: 15px;
     @include mq() {
       padding: 0 0 5px 0; 
