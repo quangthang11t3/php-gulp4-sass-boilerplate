@@ -55,6 +55,98 @@ $(function() {
     });   
   }  
 
+  // Tabs Control
+  var tabsControl = function() {
+    var $tabsNav = $('.js-tabsNav'),
+        $tabsItem = $('.js-tabsItem'),
+        $tabsCnt = $('.js-tabsCnt'),
+        $tabsPanel = $('.js-tabsPanel');
+
+    // Setting first view
+    $tabsPanel.hide();
+    $tabsCnt.each(function () {
+        $(this).find($tabsPanel).eq(0).show();
+    });
+    $tabsNav.each(function () {
+        $(this).find($tabsItem).eq(0).addClass('active');
+    });
+
+    // Click event
+    $tabsItem.on('click', function () {
+      var tMenu = $(this).parents($tabsNav).find($tabsItem);
+      var tCont = $(this).parents($tabsNav).next($tabsCnt).find($tabsPanel);
+      var index = tMenu.index(this);
+      tMenu.removeClass('active');
+      $(this).addClass('active');
+      tCont.hide();
+      tCont.eq(index).show();
+    });
+  } 
+
+
+  // Slider init
+  // Slider (Restaurant detail page)
+  var initSliderRest = function() {
+    var $slide01 = $('.js-slider01'); 
+    var $slide02 = $('.js-slider02'); 
+    var $slide02Nav = $('.js-slider02-nav'); 
+
+    // Slider 01
+    if ($slide01.length) {
+      // Tabs slider
+      $slide01.slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        swipeToSlide: true,
+        // fade: true,
+        prevArrow: '<a class="slick-prev" href="#"><span></span></a>',
+        nextArrow: '<a class="slick-next" href="#"><span></span></a>',
+        // responsive: [{
+        //   breakpoint: 768,
+        //   settings: {
+        //     slidesToShow: 1
+        //   }
+        // }]
+      });
+    }
+
+    // Slider 02
+    if ($slide02.length) {
+      // Tabs slider
+      $slide02.slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        swipeToSlide: true,
+        // fade: true,
+        asNavFor: $slide02Nav,
+        prevArrow: '<a class="slick-prev" href="#"><span></span></a>',
+        nextArrow: '<a class="slick-next" href="#"><span></span></a>',
+      });
+    }
+
+    // Slider02 Nav
+    if ($slide02.length && $slide02Nav.length) {
+      $slide02Nav.slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: $slide02,
+        arrows: false,
+        dots: false,
+        // centerMode: true,
+        focusOnSelect: true,
+        responsive: [{
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 4
+          }
+        }]
+      });
+    }
+  }
 
 
   /* --------------------
@@ -66,6 +158,8 @@ $(function() {
     objectFitImages();
     clickPageTop();
     triggerAccordion();
+    tabsControl();
+    initSliderRest();
   }
 
   init();

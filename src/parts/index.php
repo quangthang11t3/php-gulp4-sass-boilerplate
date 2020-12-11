@@ -213,6 +213,124 @@
     <br>
     <br>
     <div class="fadeup">
+      <p class="title-lv4">Tabs</p>
+      <hr>
+      <br>
+      <br>
+      <div class="tabs">
+        <div class="tabs-navWrapper">
+          <ul class="tabs-nav js-tabsNav">
+            <li class="tabs-item js-tabsItem active">Tab01</li>
+            <li class="tabs-item js-tabsItem">Tab02</li>
+            <li class="tabs-item js-tabsItem">Tab03</li>
+            <li class="tabs-item js-tabsItem">Tab04</li>
+          </ul>
+        </div>
+        <div class="tabs-cnt js-tabsCnt">
+          <div class="tabs-panel js-tabsPanel">
+            <h3 class="title-lv3">Content 01</h3>
+            <ul class="col3">
+              <li class="col3-item">
+                <a class="col3-item--inner link" href="">
+                  <div class="thumb">
+                    <img src="<?php echo $PATH;?>/assets/images/common/dummy02.jpg" alt="">
+                  </div>
+                  <p class="thumb-ttl">このテキストはキャプションです。</p>
+                </a>
+              </li>
+              <li class="col3-item">
+                <a class="col3-item--inner link" href="">
+                  <div class="thumb">
+                    <img src="<?php echo $PATH;?>/assets/images/common/dummy02.jpg" alt="">
+                  </div>
+                  <p class="thumb-ttl">このテキストはキャプションです。</p>
+                </a>
+              </li>
+              <li class="col3-item">
+                <a class="col3-item--inner link" href="">
+                  <div class="thumb">
+                    <img src="<?php echo $PATH;?>/assets/images/common/dummy02.jpg" alt="">
+                  </div>
+                  <p class="thumb-ttl">このテキストはキャプションです。</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs-panel js-tabsPanel">
+            <h3 class="title-lv3">Content 02</h3>
+          </div>
+          <div class="tabs-panel js-tabsPanel">
+            <h3 class="title-lv3">Content 03</h3>
+          </div>
+          <div class="tabs-panel js-tabsPanel">
+            <h3 class="title-lv3">Content 04</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="fadeup">
+      <p class="title-lv4">スライダー</p>
+      <hr>
+      <br>
+      <p class="title-lv5">タイプ1</p>
+      <ul class="slider01 js-slider01">
+        <li>
+          <img src="<?php echo $PATH;?>/assets/images/common/dummy01.jpg" alt="">
+        </li>
+        <li>
+          <img src="<?php echo $PATH;?>/assets/images/common/dummy01.jpg" alt="">
+        </li>
+        <li>
+          <img src="<?php echo $PATH;?>/assets/images/common/dummy01.jpg" alt="">
+        </li>
+        <li>
+          <img src="<?php echo $PATH;?>/assets/images/common/dummy01.jpg" alt="">
+        </li>
+      </ul>
+      <br>
+      <br>
+      <p class="title-lv5">タイプ2</p>
+      <ul class="slider02 js-slider02">
+        <li>
+          <img src="<?php echo $PATH;?>/assets/images/common/dummy01.jpg" alt="">
+        </li>
+        <li>
+          <img src="<?php echo $PATH;?>/assets/images/common/dummy01.jpg" alt="">
+        </li>
+        <li>
+          <img src="<?php echo $PATH;?>/assets/images/common/dummy01.jpg" alt="">
+        </li>
+        <li>
+          <img src="<?php echo $PATH;?>/assets/images/common/dummy01.jpg" alt="">
+        </li>
+        <li>
+          <img src="<?php echo $PATH;?>/assets/images/common/dummy01.jpg" alt="">
+        </li>
+      </ul>
+      <br>
+      <ul class="slider02-nav js-slider02-nav">
+        <li style="padding: 0 5px;">
+          <img src="<?php echo $PATH;?>/assets/images/common/dummy01.jpg" alt="">
+        </li>
+        <li style="padding: 0 5px;">
+          <img src="<?php echo $PATH;?>/assets/images/common/dummy01.jpg" alt="">
+        </li>
+        <li style="padding: 0 5px;">
+          <img src="<?php echo $PATH;?>/assets/images/common/dummy01.jpg" alt="">
+        </li>
+        <li style="padding: 0 5px;">
+          <img src="<?php echo $PATH;?>/assets/images/common/dummy01.jpg" alt="">
+        </li>
+        <li style="padding: 0 5px;">
+          <img src="<?php echo $PATH;?>/assets/images/common/dummy01.jpg" alt="">
+        </li>
+      </ul>
+    </div>
+    <br>
+    <br>
+    <div class="fadeup">
       <p class="title-lv4">アコーディオン</p>
       <hr>
       <br>
@@ -413,6 +531,19 @@
       <input class="input" type="text" name="keyword" placeholder="レシピをキーワードで探す">
       <input class="search" type="submit" value="">
     </form>
+    <br>
+    <br>
+    <ul>
+      <li>
+        <input class="checkbox active" id="cbox01" type="checkbox" value="value1">
+        <label for="cbox01">テキスト</label>
+      </li>
+      <br>
+      <li>
+        <input class="checkbox active" id="cbox02" type="checkbox" value="value1">
+        <label for="cbox02">テキスト</label>
+      </li>
+    </ul>
     <br>
     <div class="form-action">
       <input class="btn active" type="submit" value="検索">
