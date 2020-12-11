@@ -25,7 +25,7 @@
           </div>
         </div>
         <p class="c-contact__message">お問い合わせご希望の方は下記フォームよりお送り下さい。<br>送信内容を確認させていただき担当よりご連絡致します。</p>
-        <div id="mw_wp_form_mw-wp-form-215" class="mw_wp_form mw_wp_form_input  ">
+        <div id="mw_wp_form_mw-wp-form-215" class="mw_wp_form mw_wp_form_input">
           <form method="post" action="" enctype="multipart/form-data">
             <div class="c-form">
               <div class="c-form__row"><label for="" class="c-form__row__label"><span class="c-form__row__label__text">お問い合わせ区分</span> <span class="c-form__required">必須</span> </label>
@@ -34,6 +34,18 @@
                       <label>
                         <input type="radio" name="type" value="製品のご相談" class="horizontal-item">
                         <span class="mwform-radio-field-text">製品のご相談</span>
+                      </label>
+                    </span>
+                    <span class="mwform-radio-field horizontal-item">
+                      <label>
+                        <input type="radio" name="type" value="資料請求" class="horizontal-item">
+                        <span class="mwform-radio-field-text">資料請求</span>
+                      </label>
+                    </span>
+                    <span class="mwform-radio-field horizontal-item">
+                      <label>
+                        <input type="radio" name="type" value="資料請求" class="horizontal-item">
+                        <span class="mwform-radio-field-text">資料請求</span>
                       </label>
                     </span>
                     <span class="mwform-radio-field horizontal-item">
