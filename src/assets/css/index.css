@@ -7,7 +7,6 @@ body,
 div,
 span,
 applet,
-object,
 iframe,
 h1,
 h2,
@@ -2048,8 +2047,7 @@ body {
   font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif; }
   body.fixed {
     height: 100vh;
-    overflow: hidden;
-    display: flex; }
+    overflow: hidden; }
 
 .pc-only {
   display: block; }
