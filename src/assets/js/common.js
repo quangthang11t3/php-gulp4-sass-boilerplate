@@ -86,7 +86,7 @@ $(function() {
 
   // Slider init
   // Slider (Restaurant detail page)
-  var initSliderRest = function() {
+  var initSliders = function() {
     var $slide01 = $('.js-slider01'); 
     var $slide02 = $('.js-slider02'); 
     var $slide02Nav = $('.js-slider02-nav'); 
@@ -101,8 +101,8 @@ $(function() {
         autoplaySpeed: 5000,
         swipeToSlide: true,
         // fade: true,
-        prevArrow: '<a class="slick-prev" href="#"><span></span></a>',
-        nextArrow: '<a class="slick-next" href="#"><span></span></a>',
+        prevArrow: '<a class="slick-prev" href="javascript:void(0)"><span></span></a>',
+        nextArrow: '<a class="slick-next" href="javascript:void(0)"><span></span></a>',
         // responsive: [{
         //   breakpoint: 768,
         //   settings: {
@@ -123,8 +123,8 @@ $(function() {
         swipeToSlide: true,
         // fade: true,
         asNavFor: $slide02Nav,
-        prevArrow: '<a class="slick-prev" href="#"><span></span></a>',
-        nextArrow: '<a class="slick-next" href="#"><span></span></a>',
+        prevArrow: '<a class="slick-prev" href="javascript:void(0)"><span></span></a>',
+        nextArrow: '<a class="slick-next" href="javascript:void(0)"><span></span></a>',
       });
     }
 
@@ -148,7 +148,6 @@ $(function() {
     }
   }
 
-
   /* --------------------
   INIT (WINDOW ON LOAD)
   --------------------- */
@@ -159,7 +158,7 @@ $(function() {
     clickPageTop();
     triggerAccordion();
     tabsControl();
-    initSliderRest();
+    initSliders();
   }
 
   init();

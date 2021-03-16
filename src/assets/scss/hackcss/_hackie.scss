@@ -3,3 +3,10 @@
 	// .class {
 	// }
 }
+
+
+// Hack Firefox
+@-moz-document url-prefix() { 
+  // .class {
+	// }
+}
