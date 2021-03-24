@@ -35,6 +35,18 @@ $(function() {
     });
   }
 
+  // Animation on scroll
+  var scrollLoad = function() {
+   var scroll = $(this).scrollTop();
+    $('.fadeup, .fadein').each(function() {
+      var elemPos = $(this).offset().top;
+      var windowHeight = $(window).height();
+      if (scroll > elemPos - windowHeight + 100) {
+        $(this).addClass('in');
+      }
+    });
+  }
+
   // Trigger Pagetop
   var triggerPageTop = function() {
     var $pageTop = $('.js-pageTop');
@@ -154,6 +166,7 @@ $(function() {
   // Run all script when DOM has loaded
   var init = function() {
     anchorLink();
+    scrollLoad();
     objectFitImages();
     clickPageTop();
     triggerAccordion();
@@ -176,15 +189,7 @@ $(function() {
   WINDOW ON SCROLL
   --------------------- */
   $(window).scroll(function() {
-    var scroll = $(this).scrollTop();
-    $('.fadeup').each(function() {
-      var elemPos = $(this).offset().top;
-      var windowHeight = $(window).height();
-      if (scroll > elemPos - windowHeight + 100) {
-        $(this).addClass('in');
-      }
-    });
-
+    scrollLoad();
     triggerPageTop();
   });
 
