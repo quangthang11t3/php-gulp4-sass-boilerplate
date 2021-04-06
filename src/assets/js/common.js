@@ -1,4 +1,5 @@
-$(function() {
+// $(function() {
+jQuery(function($) {
 
   /* --------------------
   GLOBAL VARIABLE
