@@ -39,7 +39,7 @@ jQuery(function($) {
   // Animation on scroll
   var scrollLoad = function() {
    var scroll = $(this).scrollTop();
-    $('.fadeup, .fadein').each(function() {
+    $('.ani').each(function() {
       var elemPos = $(this).offset().top;
       var windowHeight = $(window).height();
       if (scroll > elemPos - windowHeight + 100) {
@@ -160,6 +160,13 @@ jQuery(function($) {
       });
     }
   }
+
+  // var matchHeight = function() {
+  //   var $elem01 = $('.p-event--infor-item-ttl');
+  //   if ($elem01.length) {
+  //     $elem01.matchHeight();
+  //   }
+  // }
 
   /* --------------------
   INIT (WINDOW ON LOAD)
