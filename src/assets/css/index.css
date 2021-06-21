@@ -2121,6 +2121,42 @@ body {
 .slick-arrow.slick-hidden {
   display: none; }
 
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px; }
+  .slick-dots li {
+    margin-right: 14px; }
+    .slick-dots li:last-child {
+      margin-right: 0; }
+    .slick-dots li button {
+      position: relative;
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      font-size: 0;
+      border: solid 1px #76C4EA;
+      background-color: #76C4EA;
+      border-radius: 50%; }
+      .slick-dots li button:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background-color: #EEEEEE;
+        border-radius: 50%;
+        content: ""; }
+    .slick-dots li.slick-active button {
+      border-color: #fff; }
+      .slick-dots li.slick-active button:before {
+        width: 6px;
+        height: 6px;
+        background-color: #fff; }
+
 .slick-prev,
 .slick-next {
   position: absolute;
@@ -2183,7 +2219,7 @@ body {
       .slick-next span:before {
         left: 15px; } }
 
-/* Fade up on scroll */
+/* Fade up */
 .fadeup {
   opacity: 0;
   transform: translate(0, 80px);
@@ -2191,28 +2227,6 @@ body {
   .fadeup.in {
     opacity: 1;
     transform: translate(0, 0); }
-
-/* Fade up on load */
-@-webkit-keyframes fadeup2 {
-  0% {
-    opacity: 0;
-    transform: translate(0, 80px); }
-  100% {
-    opacity: 1;
-    transform: translate(0, 0); } }
-
-@keyframes fadeup2 {
-  0% {
-    opacity: 0;
-    transform: translate(0, 80px); }
-  100% {
-    opacity: 1;
-    transform: translate(0, 0); } }
-
-.fadeup2 {
-  opacity: 1;
-  transform: translate(0, 0);
-  animation: fadeup2 1s cubic-bezier(0.165, 0.84, 0.44, 1); }
 
 .delay-1 {
   transition-delay: .1s; }
@@ -2250,6 +2264,42 @@ body {
 .delay-12 {
   transition-delay: 1.2s; }
 
+.delay-13 {
+  transition-delay: 1.3s; }
+
+.delay-14 {
+  transition-delay: 1.4s; }
+
+.delay-15 {
+  transition-delay: 1.5s; }
+
+.delay-16 {
+  transition-delay: 1.6s; }
+
+.delay-17 {
+  transition-delay: 1.7s; }
+
+.delay-18 {
+  transition-delay: 1.8s; }
+
+.delay-19 {
+  transition-delay: 1.9s; }
+
+.delay-20 {
+  transition-delay: 2.0s; }
+
+.delay-21 {
+  transition-delay: 2.1s; }
+
+.delay-22 {
+  transition-delay: 2.2s; }
+
+.delay-23 {
+  transition-delay: 2.3s; }
+
+.delay-24 {
+  transition-delay: 2.4s; }
+
 .ani-delay-1 {
   animation-delay: .1s; }
 
@@ -2285,6 +2335,42 @@ body {
 
 .ani-delay-12 {
   animation-delay: 1.2s; }
+
+.ani-delay-13 {
+  animation-delay: 1.3s; }
+
+.ani-delay-14 {
+  animation-delay: 1.4s; }
+
+.ani-delay-15 {
+  animation-delay: 1.5s; }
+
+.ani-delay-16 {
+  animation-delay: 1.6s; }
+
+.ani-delay-17 {
+  animation-delay: 1.7s; }
+
+.ani-delay-18 {
+  animation-delay: 1.8s; }
+
+.ani-delay-19 {
+  animation-delay: 1.9s; }
+
+.ani-delay-20 {
+  animation-delay: 2.0s; }
+
+.ani-delay-21 {
+  animation-delay: 2.1s; }
+
+.ani-delay-22 {
+  animation-delay: 2.2s; }
+
+.ani-delay-23 {
+  animation-delay: 2.3s; }
+
+.ani-delay-24 {
+  animation-delay: 2.4s; }
 
 /* -------------------
   PARTS
