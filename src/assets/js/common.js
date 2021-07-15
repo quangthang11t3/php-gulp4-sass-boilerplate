@@ -173,6 +173,7 @@ jQuery(function($) {
   --------------------- */
   // Run all script when DOM has loaded
   var init = function() {
+    new WOW().init();
     anchorLink();
     scrollLoad();
     objectFitImages();

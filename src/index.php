@@ -2,7 +2,7 @@
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/inc/header.php'; ?>
 
     <main class="main">
-    	Main content
+    	<p class="wow fadeInUp">Main Content</p>
 		</main><!-- ./main -->
 
 <!-- include footer -->
