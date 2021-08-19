@@ -2,12 +2,10 @@
 // ===========================
 // base
 // ===========================
-
 @import "base/reset";
 @import "base/variables";
 @import "base/mixin";
 @import "base/common";
-
 
 
 // ===========================
@@ -21,16 +19,12 @@
 @import "libs/animate-min";
 
 
-
 // ===========================
 // animation
 // ===========================
 
-@import "animations/fadeup";
-// @import "animations/pulse";
+@import "animations/*";
 @import "animations/delay";
-
-
 
 
 // ===========================
@@ -41,20 +35,13 @@
 @import "components/footer";
 
 
-
 // ===========================
 // pages
 // ===========================
-
-@import "pages/top";
-@import "pages/contact";
-// @import "pages/otherpage";
-
+@import "pages/*";
 
 
 // ===========================
 // hack css
 // ===========================
-
-@import "hackcss/hackie";
-@import "hackcss/objectfit";
+@import "hackcss/*";

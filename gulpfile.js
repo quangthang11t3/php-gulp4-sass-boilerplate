@@ -3,6 +3,7 @@ const gulp = require("gulp");
 const phpConnect = require('gulp-connect-php');
 const sass = require("gulp-sass");
 const sourcemaps = require('gulp-sourcemaps');
+const sassGlob = require("gulp-sass-glob");
 
 function connectsync() {
   phpConnect.server({
@@ -35,6 +36,7 @@ function css() {
     .src("src/assets/scss/**/*.scss")
     //2. init source maps
     .pipe(sourcemaps.init())
+    .pipe(sassGlob())
     //3. pass that file through sass compiler
     .pipe(sass().on('error', sass.logError))
     //4. write source maps
