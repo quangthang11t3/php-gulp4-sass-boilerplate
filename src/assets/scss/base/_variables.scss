@@ -2,13 +2,28 @@
 /* -------------------
   VARIABLES
 --------------------*/
+// =========================================
+// Font face
+// =========================================
 
-// Color
-// $color-base: #000;
-// $color-a: #ffeb1b;
+// @font-face{
+//   font-family: EuclidFlex;
+//   src: url('../font/EuclidFlex/EuclidFlex-Regular.eot'); // IE9 Compat Modes
+//   src: url('../font/EuclidFlex/EuclidFlex-Regular.eot?#iefix') format('embedded-opentype'), // IE6-IE8
+//        url('../font/EuclidFlex/EuclidFlex-Regular.woff2') format('woff2'),  //Super Modern Browsers 
+//        url('../font/EuclidFlex/EuclidFlex-Regular.woff') format('woff'), // Pretty Modern Browsers
+//        url('../font/EuclidFlex/EuclidFlex-Regular.ttf')  format('truetype'), // Safari, Android, iOS
+//        url('../font/EuclidFlex/EuclidFlex-Regular.svg#svgFontName') format('svg'); // Legacy iOS
+// }
+
 
 // Font Family
 $font-base: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 // $font-base: "Noto Sans JP", sans-serif;
 $font-a: 'EB Garamond', serif;
 $font-b: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+
+// Color
+// $color-base: #000;
+// $color-a: #ffeb1b;
