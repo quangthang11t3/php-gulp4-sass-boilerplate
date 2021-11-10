@@ -26,6 +26,14 @@ body {
 }
 
 .pc-only2 {
+  display: block;
+
+  @include mq(sm2) {
+    display: none !important;
+  }
+}
+
+.pc-only3 {
   display: inline-block;
 
   @include mq() {
@@ -37,6 +45,14 @@ body {
   display: none !important;
 
   @include mq() {
+    display: block !important;
+  }
+}
+
+.sp-only2 {
+  display: none !important;
+
+  @include mq(sm2) {
     display: block !important;
   }
 }
