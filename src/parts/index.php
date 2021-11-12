@@ -6,7 +6,7 @@
     <p class="title-lv2 align-center">パーツリスト</p>
     <br>
     <br>
-    <div class="fadeup2">
+    <div class="wow fadeInUp">
       <p class="title-lv4">パンくず</p>
       <hr>
       <div class="breadcrumb">
@@ -19,7 +19,7 @@
     </div>
     <br>
     <br>
-    <div class="fadeup2">
+    <div class="wow fadeInUp">
       <p class="title-lv4">見出し、テキスト、リンク (ワードプレス用、「no-reset」クラスを使う)</p>
       <hr>
       <br>
@@ -38,7 +38,7 @@
     </div>
     <br>
     <br>
-    <div class="fadeup">
+    <div class="wow fadeInUp">
       <p class="title-lv4">見出し (全てページ)</p>
       <hr>
       <br>
@@ -56,7 +56,7 @@
     </div>
     <br>
     <br>
-    <div class="fadeup">
+    <div class="wow fadeInUp">
       <p class="title-lv4">ボタン、リンク、タグ</p>
       <hr>
       <br>
@@ -170,7 +170,7 @@
     </div>
     <br>
     <br>
-    <div class="fadeup">
+    <div class="wow fadeInUp">
       <p class="title-lv4">Table</p>
       <hr>
       <br>
@@ -212,7 +212,7 @@
     </div>
     <br>
     <br>
-    <div class="fadeup">
+    <div class="wow fadeInUp">
       <p class="title-lv4">Tabs</p>
       <hr>
       <br>
@@ -270,7 +270,7 @@
     </div>
     <br>
     <br>
-    <div class="fadeup">
+    <div class="wow fadeInUp">
       <p class="title-lv4">スライダー</p>
       <hr>
       <br>
@@ -330,7 +330,7 @@
     </div>
     <br>
     <br>
-    <div class="fadeup">
+    <div class="wow fadeInUp">
       <p class="title-lv4">アコーディオン</p>
       <hr>
       <br>
@@ -349,7 +349,7 @@
     </div>
     <br>
     <br>
-    <div class="fadeup">
+    <div class="wow fadeInUp">
       <p class="title-lv4">レイアウト</p>
       <hr>
       <br>
@@ -515,7 +515,7 @@
     </div>
     <br>
     <br>
-    <div class="fadeup">
+    <div class="wow fadeInUp">
       <p class="title-lv4">モーダル</p>
       <hr>
       <br>
