@@ -2,8 +2,56 @@
 // ===========================
 // TABLE
 // ===========================
-
 .table {
+  font-size: fs(14);
+  color: #022845;
+  &-row {
+    display: flex;
+    border-top: solid 1px #EBEBEB;
+    @include mq(sm2) {
+      display: block;
+      &:last-child {
+        border-bottom: solid 1px #EBEBEB;
+      }
+    }
+  }
+  &-th,
+  &-td {
+    display: flex;
+    padding: 35px 20px;
+  }
+  &-th {
+    position: relative;
+    width: 26%;
+    @include mq(sm2) {
+      width: 100%;
+      padding: 15px;
+      border-bottom: solid 1px #EBEBEB;
+    }
+    &:before {
+      position: absolute;
+      left: 0;
+      top: -1px;
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #A4C3CB;
+      content: "";
+    }
+  }
+  &-td {
+    @include mq(sm2) {
+      width: 100%;
+      padding: 15px;
+    }
+  }
+}
+
+
+// ===========================
+// TABLE2
+// ===========================
+.table2 {
   @include mq(sm2) {
     overflow-x: auto;
   }

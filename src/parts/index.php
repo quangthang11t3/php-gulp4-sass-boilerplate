@@ -176,6 +176,19 @@
       <br>
       <br>
       <div class="table">
+        <div class="table-row">
+          <div class="table-th">テキスト</div>
+          <div class="table-td">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+        </div>
+        <div class="table-row">
+          <div class="table-th">テキスト</div>
+          <div class="table-td">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+        </div>
+      </div>
+      <hr>
+      <br>
+      <br>
+      <div class="table2">
         <table>
           <tbody>
             <tr>
@@ -191,7 +204,7 @@
       </div>
       <br>
       <br>
-      <div class="table type2">
+      <div class="table2 type2">
         <table>
           <tbody>
             <tr>

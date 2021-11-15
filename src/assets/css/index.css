@@ -2025,15 +2025,27 @@ body {
       display: none !important; } }
 
 .pc-only2 {
+  display: block; }
+  @media screen and (max-width: 767px) {
+    .pc-only2 {
+      display: none !important; } }
+
+.pc-only3 {
   display: inline-block; }
   @media screen and (max-width: 1050px) {
-    .pc-only2 {
+    .pc-only3 {
       display: none !important; } }
 
 .sp-only {
   display: none !important; }
   @media screen and (max-width: 1050px) {
     .sp-only {
+      display: block !important; } }
+
+.sp-only2 {
+  display: none !important; }
+  @media screen and (max-width: 767px) {
+    .sp-only2 {
       display: block !important; } }
 
 .wrapper {
@@ -2045,7 +2057,8 @@ body {
   margin: 0 auto; }
   @media screen and (max-width: 1050px) {
     .container {
-      width: 100%; } }
+      width: 100%;
+      padding: 0 15px; } }
 
 /* Slider */
 .slick-slider {
@@ -5388,16 +5401,52 @@ Copyright (c) 2013 Daniel Eden
       .post-direct-sns a:last-child {
         margin-right: 0; }
 
+.table {
+  font-size: 0.875rem;
+  color: #022845; }
+  .table-row {
+    display: flex;
+    border-top: solid 1px #EBEBEB; }
+    @media screen and (max-width: 767px) {
+      .table-row {
+        display: block; }
+        .table-row:last-child {
+          border-bottom: solid 1px #EBEBEB; } }
+  .table-th, .table-td {
+    display: flex;
+    padding: 35px 20px; }
+  .table-th {
+    position: relative;
+    width: 26%; }
+    @media screen and (max-width: 767px) {
+      .table-th {
+        width: 100%;
+        padding: 15px;
+        border-bottom: solid 1px #EBEBEB; } }
+    .table-th:before {
+      position: absolute;
+      left: 0;
+      top: -1px;
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #A4C3CB;
+      content: ""; }
+  @media screen and (max-width: 767px) {
+    .table-td {
+      width: 100%;
+      padding: 15px; } }
+
 @media screen and (max-width: 767px) {
-  .table {
+  .table2 {
     overflow-x: auto; } }
 
-.table table {
+.table2 table {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%; }
 
-.table th {
+.table2 th {
   background-color: #F2F5F7;
   border: 1px solid #E6EEF2;
   box-sizing: border-box;
@@ -5405,13 +5454,13 @@ Copyright (c) 2013 Daniel Eden
   padding: 20px 15px;
   width: 185px; }
 
-.table td {
+.table2 td {
   border: 1px solid #E6EEF2;
   box-sizing: border-box;
   padding: 20px 15px; }
 
 @media screen and (max-width: 767px) {
-  .table.type2 table {
+  .table2.type2 table {
     width: 220vw; } }
 
 .form-one {
