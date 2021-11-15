@@ -16,6 +16,14 @@ jQuery(function($) {
   /* --------------------
   FUNCTION COMMON
   --------------------- */
+  // Trigger menu content
+  var triggerMenuCnt = function() {
+    $('.js-sp-navBtn').click(function() {
+      $(this).toggleClass('active');
+      $('body, .js-menu').toggleClass('active');
+    });
+  }
+
   // Setting anchor link
   var anchorLink = function() {
     // Scroll to section
@@ -174,6 +182,7 @@ jQuery(function($) {
   // Run all script when DOM has loaded
   var init = function() {
     new WOW().init();
+    triggerMenuCnt();
     anchorLink();
     scrollLoad();
     objectFitImages();
@@ -199,6 +208,7 @@ jQuery(function($) {
   --------------------- */
   $(window).scroll(function() {
     scrollLoad();
+    triggerMenuCnt();
     triggerPageTop();
   });
 

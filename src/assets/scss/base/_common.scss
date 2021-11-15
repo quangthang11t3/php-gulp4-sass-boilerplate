@@ -6,10 +6,9 @@
 body {
   font-family: $font-base;
   font-weight: 500;
-  &.fixed {
+  &.active {
     height: 100vh;
     overflow: hidden;
-    // display: flex;
   }
 }
 
